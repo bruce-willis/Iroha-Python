@@ -14,7 +14,7 @@ You can find more detailed information and demo in the [presentation](https://1d
 
 * clone this repo: `git clone https://github.com/bruce-willis/Iroha-Python.git`
 * install python requirements: `pip install -r requirements.txt`
-* Run `start_docker.sh` to start Docker container
+* Run `start_docker.sh` to start Docker container with Iroha (for more info refer to [Iroha docs](https://iroha.readthedocs.io/en/latest/getting_started/index.html))
 * Execute this command inside container:
 ```sh
 irohad --config config.docker --genesis_block genesis.block --keypair_name node0 --overwrite_ledger
@@ -25,15 +25,24 @@ This will start irohad daemon
 
 ***
 
-### 
+### Screenshots:
 
-Screenshots:
+* Overview:  
+  ![overview](demo/all.png)
 
-* Overview:
-![overview](demo/all.png)
+* Admin ui with transaction history:   
+  ![admin ui](demo/main_and_history.png)
 
-* Admin ui with transaction history:
-![admin ui](demo/main_and_history.png)
-
-* user's ui:
-![user ui](demo/success.png)
+* user's ui:   
+  ![user ui](demo/success.png)
+  
+ * forward transaction:
+   ![forward](demo/forward.gif)
+  
+ * backward transaction:
+   ![backward](demo/backward.gif)
+   
+ * Checking errors:  
+     ![error 1](demo/error_amount.gif)
+     ![error 2](demo/error_dist.gif)
+  
